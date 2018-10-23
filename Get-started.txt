@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*navigation bar starts here1*/
+.topnav {
+  overflow: hidden;
+  background-color:  rgb(23, 181, 208);
+    z-index:2;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active1 {
+  background-color: rgb(23, 159, 184);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(23, 181, 208);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(26, 196, 255)
+;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(26, 196, 255)
+;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/*Navigation Ends here*/
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+/*margin*/
+content {
+    margin: 35px;
+}
+.title {
+ font-family:Courier New; 
+ text-align:center;
+ font-size: 50px;
+text-decoration: underline overline;
+ }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style=" text-align:center;
+            font-family:Courier New;
+            font-weight:200;">Wanderlust Notes</h1>
+  <p>Creating Bullet Journals Around the World</p>
+</div>
+
+ <!--Navigation bar 1-->
+ <div class="topnav" id="myTopnav">
+  <a href="home.html" >Home</a>
+  <div class="dropdown">
+    <button class="dropbtn"class="active1">Get Started 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a target="_self"  href="Get-started.html" class="active1">Getting Started</a>
+      <a target="_self" href="Material.html">Materials</a>
+    </div>
+  </div> 
+  <a  target="_self" href="#Contact.html">Contact</a>
+ 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!--Navigation Bar ends here-->
+
+
+  <div class="main">
+  <h1 class=title > Getting Started</h1>
+  <h2> What is Bullet Journaling?</h2>
+ <p> This is the very first question to begin with and an important one. Bullet Journaling is a way to plan your life but it is fluid what i mean by that is you have the power to create your own structure and what you want to make out of it so its personalized to you and your personal bias.</p>
+  
+  <h2> Making your First Bullet Journal!</h2>
+  <p> If you are starting your first Bullet Journal you only need 3 simple things, 1.A journal 2.Pen 3.Ruler. Those are the main basic materials you need so as you can see making one is not so expensive and anyone can do it no doubt.</p>
+  <h2> Your Must Have!</h2>
+ <p> You may want to rush into things and that perfectly fine but you may want to think about these option to include before you rush into things.</p>
+  <ul>
+  <li> <mark>An Index</mark></li>
+  </ul>
+  <p> Saving a few pages in the front of your journal will save you the extra time in trying to find an important page and keeps everything documented and organized.</p>
+  <a href="#Hacks">See Tips and Hacks below for more</a>
+  <h1 id="Hacks" style=text-align:center;>5 Tip & Hacks for your Bullet Journal</h1>
+      <h2>5.Envelope Slot</h2>
+      <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/33692668_212661926001033_2511632909752860672_o.jpg?_nc_cat=0&_nc_eui2=AeFl37QF0x1jybqMZMIIphYpPe_6HRQC6_E480BXmv7Ub3l15Wg00QBQnupHsR7PijRR7PWQrKBUrxw4mMMIXAn_OLQKsREL7x_grFuqDE0ehQ&oh=48db6d80daca7acb100e0d1b36105116&oe=5B8B02AF" style="height:400px;"></div>
+      <p class=content style=Text-decoration:underline;>Envelope Slot- An Easy Solution for those Loose Papers in your Bullet Journal</p>
+      <p>First you'll want to cut out a square piece of CardStock its also a great time to design it<br> Next Youll need to Glue the sides of the cardstock except one side (which will be where you put papers in) Onto a Page In your Bullet Journal.<mark> I suggest the first pages or the back</mark> <br> Then Youll have your Easy cute folder but if you want to hack to an easier step just glue on an envelope, Easy!  </p>
+      <br>
+           <h2>4.Washy Tape Page Markers</h2>
+      <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/33662010_212666216000604_5522033770225467392_o.jpg?_nc_cat=0&_nc_eui2=AeF7Gl9jaZz2d6LNizZ5nTdavtdjlnuIkFg78-VfVLt8LwslNAXedmZrpE1Waae8QZYSO_9TjuWQjWWsbagCs55DbH7rddqBq0fm1AXCwB7oyw&oh=52994dba753c3897f1d23977f8a38c2c&oe=5B8CC3BE" style="height:400px;"></div>
+      <p style=Text-decoration:underline;>Washy Tape Page Markers-An Easy Way to make Pages stand out</p>
+      <p>In order to make a page marker you'll need to add a strip of washy tape on the corner of your page *shown in the picture above* you want to stand out you can also do this by adding washytape along the edge of the page but by doing this you can easily make your own washy tape page marker in one step!</p>
+            <h2>3.Cover Up Hack</h2>
+      <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/33745725_212681932665699_6070952190044798976_o.jpg?_nc_cat=0&_nc_eui2=AeH98MJy3YvYyMEd1uzG6i8e_IbtyMv9PItGBRuyS2fLrVY4wJcwEkosJ1pPjCLjSzS1DFX8Swm6Fzgd_lKrMiQnVOlsLw2sdnjye4CKK7yM5w&oh=0d601d46b072888deae84a5fb2e8c931&oe=5BC15D5B" style="height:400px;"></div>
+      <p style=Text-decoration:underline;>Cover Up Hack-An easy way to cover up ink bleeds and other mistakes</p>
+      <p>Its such a hasle when ink bleeds on the other side of the page in your Bullet Journal or any type of silly mistake. In order to hide these mistakes you can easily cover it by glueing on an image onto the page. Say goodbye to wasting a page from your journal ever!</p>
+      
+          <h2>2.Flip Notes</h2>
+      <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/33711470_212717959328763_2918706186331095040_o.jpg?_nc_cat=0&oh=8217d04f47f20469d915cf9654a25262&oe=5BBC4057" style="height:400px;"></div>
+      <p style=Text-decoration:underline;>Flip Notes- Helpful flip note to pull out while youre working on other pages</p>
+      <p>While your working on a page in your Bullet Journal you may find your self flipping to one page to another this is a hassle so an easier way to fix this problem is creating the flip notes. You create this by glueing a sheet of paper on the back of your Bullet journal that extends to the side. With this a suggestion is to put a key/legend or any notes which you refer to the most.</p>
+        <h2>1.Black Ink</h2>
+      <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/33734198_212725729327986_1854680239779610624_n.jpg?_nc_cat=0&_nc_eui2=AeEHnezoLeeQdp9fLh7Q6xjAHbo27SzK_AjfWEo884008jEBZijTLkWZYQQuWfDO8_olsNshKYrOmjca1tACZLXcXeqnvvfBb40JqwiISG92xg&oh=7c5127a0eddb1569e2bc97876f116325&oe=5B8AE125" style="height:400px;"></div>
+      <p style=Text-decoration:underline;>Black Ink- An easy quick fix up for those small errors</p>
+      <p>In order to use this hack you'll need a normal black pen and also a white gel pen<mark>You can easily buy one for a dollar on the internet</mark>. All you really need to do is block out the mistake with the black pen and then write over it. This is an easy hack and gives your Bullet Journal a nice Vintage theme </p> 
+
+
+<div class="footer">
+  <h2>References</h2>
+  <ul style=text-align:relative;>
+  <li style=text-align:relative;><a href="https://www.youtube.com/watch?v=C-f62ncQBWM&t=131s" target="_blank">Source of Tips and Hacks</a></li>
+  </ul>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>
